@@ -1,7 +1,6 @@
-package com.example.musclemate;
+package com.example.musclemate.ExerciseFragments;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,11 +9,12 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.musclemate.databinding.FragmentFirstBinding;
+import com.example.musclemate.R;
+import com.example.musclemate.databinding.FragmentSecondBinding;
 
-public class FirstFragment extends Fragment {
+public class SquatFragment extends Fragment {
 
-    private FragmentFirstBinding binding;
+    private FragmentSecondBinding binding;
 
     @Override
     public View onCreateView(
@@ -22,7 +22,7 @@ public class FirstFragment extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = FragmentFirstBinding.inflate(inflater, container, false);
+        binding = FragmentSecondBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }
@@ -30,18 +30,17 @@ public class FirstFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.buttonFirst.setOnClickListener(new View.OnClickListener() {
+        binding.buttonSecond.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(FirstFragment.this)
-                        .navigate(R.id.action_FirstFragment_to_SecondFragment);
+                NavHostFragment.findNavController(SquatFragment.this)
+                        .navigate(R.id.action_SecondFragment_to_FirstFragment);
             }
         });
     }
 
     @Override
     public void onDestroyView() {
-        Log.w("MuscleMate Main Activity: ", "Destroying Frag1 View");
         super.onDestroyView();
         binding = null;
     }

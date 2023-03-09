@@ -1,7 +1,8 @@
-package com.example.musclemate;
+package com.example.musclemate.ExerciseActivities;
 
 import android.os.Bundle;
 
+import com.example.musclemate.R;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;

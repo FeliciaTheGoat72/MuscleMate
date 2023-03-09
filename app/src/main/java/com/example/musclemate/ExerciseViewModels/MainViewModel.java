@@ -1,7 +1,11 @@
-package com.example.musclemate;
+package com.example.musclemate.ExerciseViewModels;
 
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
+
+import com.example.musclemate.IExercise;
+import com.example.musclemate.Repository;
+
 import java.util.List;
 
 public class MainViewModel extends AndroidViewModel {

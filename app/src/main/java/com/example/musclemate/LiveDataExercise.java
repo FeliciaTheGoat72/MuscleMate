@@ -7,7 +7,7 @@ import java.util.concurrent.Executor;
 import android.content.Context;
 
 public class LiveDataExercise extends LiveData<List<IExercise>> {
-    LiveData<List<Exercise>> {
+    LiveData<List<IExercise>> {
         final Context mContext;
     }
 }

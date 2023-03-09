@@ -1,6 +1,8 @@
-package com.example.musclemate;
+package com.example.musclemate.ExerciseActivities;
 
-public class ExerciseCurls implements IExercise{
+import com.example.musclemate.IExercise;
+
+public class MuscleGroupActivity implements IExercise {
     private String exerciseName = "Curls";
     private String muscleGroup = "Arms";
     private int exerciseID = 0;
