@@ -42,6 +42,7 @@ public class CurlFragment extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
+        Log.w("MuscleMate Curl Fragment: ", "Destroing View");
         binding = null;
     }
 
