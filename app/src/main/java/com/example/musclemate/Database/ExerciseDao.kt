@@ -1,4 +1,4 @@
-package com.example.musclemate
+package com.example.musclemate.Database
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
