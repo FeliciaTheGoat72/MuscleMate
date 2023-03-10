@@ -10,7 +10,7 @@ interface ExerciseDao {
 
     // CRUD:
     // Create
-    @Insert(onConflict.OnConflictStrategy.REPLACE)
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insert(item: Exercises)
     // Read
     @Query("SELECT * FROM grocery_items")
