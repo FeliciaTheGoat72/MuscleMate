@@ -1,6 +1,6 @@
 package com.example.musclemate;
 
-public class Exercise {
+public class Exercise implements IExercise{
     private final String exerciseName;
     private final int exerciseID;
 
