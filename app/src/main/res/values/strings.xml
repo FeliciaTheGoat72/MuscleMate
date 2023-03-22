@@ -8,6 +8,12 @@
     <string name="previous">Previous</string>
 
     <string name="hello_first_fragment">Welcome to MuscleMate</string>
+    <string name="choose_muscle">Choose a Muscle you want to work</string>
+    <string name="chest">Chest</string>
+    <string name="back">Back</string>
+    <string name="arms">Arms</string>
+    <string name="legs">Legs</string>
+    <string name="abs">Abs</string>
     <string name="hello_second_fragment">Are you ready to get SWOLE?! Arg: %1$s</string>
     <string name="page_title">MuscleMate</string>
 </resources>
