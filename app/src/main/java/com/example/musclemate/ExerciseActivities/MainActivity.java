@@ -53,31 +53,31 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    @Override
+
     public void onStart(Bundle savedInstanceState) {
         super.onStart();
         Log.w("MuscleMate Main Activity: ", "Starting View");
     }
 
-    @Override
+
     public void onResume(Bundle savedInstanceState) {
         super.onResume();
         Log.w("MuscleMate Main Activity: ", "Resuming View");
     }
 
-    @Override
+
     public void onPause(Bundle savedInstanceState) {
         super.onPause();
         Log.w("MuscleMate Main Activity: ", "Pausing View");
     }
 
-    @Override
+
     public void onStop(Bundle savedInstanceState) {
         super.onStop();
         Log.w("MuscleMate Main Activity: ", "Stopping View");
     }
 
-    @Override
+
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);

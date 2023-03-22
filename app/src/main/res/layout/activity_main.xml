@@ -36,7 +36,6 @@
         app:layout_anchor="@+id/appBarLayout"
         app:layout_anchorGravity="bottom|center"
         app:menu="@menu/top_app_bar"
-        app:navigationIcon="@drawable/ic_menu_24dp"
         app:title="@string/page_title" />
 
     <androidx.appcompat.widget.Toolbar

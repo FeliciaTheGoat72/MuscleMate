@@ -1,6 +1,7 @@
 package com.example.musclemate.ExerciseFragments;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,7 +43,7 @@ public class CurlFragment extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        Log.w("MuscleMate Curl Fragment: ", "Destroing View");
+        Log.w("MuscleMate Curl Fragment: ", "Destroying View");
         binding = null;
     }
 
