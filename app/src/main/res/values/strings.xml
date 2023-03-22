@@ -6,6 +6,7 @@
     <string name="second_fragment_label">MuscleMate v0.0.1</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="choose_chest_exercise">Choose a Chest exercise</string>
 
     <string name="hello_first_fragment">Welcome to MuscleMate</string>
     <string name="choose_muscle">Choose a Muscle you want to work</string>
