@@ -11,12 +11,68 @@
         android:id="@+id/textview_leg_exercises"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
         android:text="@string/choose_leg_exercise"
-        app:layout_constraintBottom_toTopOf="@id/button_previous"
+        app:layout_constraintBottom_toTopOf="@id/button_squat"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_squat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/squat"
+        app:layout_constraintBottom_toTopOf="@id/button_rdl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_leg_exercises" />
+
+    <Button
+        android:id="@+id/button_rdl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/rdl"
+        app:layout_constraintBottom_toTopOf="@id/button_split"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_squat" />
+
+    <Button
+        android:id="@+id/button_split"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/split"
+        app:layout_constraintBottom_toTopOf="@id/button_bridge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_rdl" />
+
+    <Button
+        android:id="@+id/button_bridge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/bridge"
+        app:layout_constraintBottom_toTopOf="@id/button_lunge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_split" />
+
+    <Button
+        android:id="@+id/button_lunge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/lunge"
+        app:layout_constraintBottom_toTopOf="@id/button_previous"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_bridge" />
 
     <Button
         android:id="@+id/button_previous"
@@ -26,5 +82,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_leg_exercises" />
+        app:layout_constraintTop_toBottomOf="@id/button_lunge" />
 </androidx.constraintlayout.widget.ConstraintLayout>

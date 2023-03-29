@@ -33,6 +33,11 @@
     <string name="closegrip">Close-grip Press</string>
     <string name="military">Shoulder Press</string>
     <string name="latRaise">Lateral Raises</string>
+    <string name="squat">Squat</string>
+    <string name="rdl">Romanian Deadlift</string>
+    <string name="split">Split Squat</string>
+    <string name="bridge">Glute Bridges</string>
+    <string name="lunge">Lunges</string>
     <string name="hello_second_fragment">Are you ready to get SWOLE?! Arg: %1$s</string>
     <string name="page_title">MuscleMate</string>
 </resources>
