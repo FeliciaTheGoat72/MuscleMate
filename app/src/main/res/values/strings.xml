@@ -22,6 +22,11 @@
     <string name="arms">Arms</string>
     <string name="legs">Legs</string>
     <string name="abs">Abs</string>
+    <string name="bench">Bench Press</string>
+    <string name="incline">Incline Press</string>
+    <string name="flies">Dumbbell Flies</string>
+    <string name="dips">Dips</string>
+    <string name="pushups">Push-ups</string>
     <string name="hello_second_fragment">Are you ready to get SWOLE?! Arg: %1$s</string>
     <string name="page_title">MuscleMate</string>
 </resources>
