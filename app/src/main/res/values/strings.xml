@@ -24,9 +24,15 @@
     <string name="abs">Abs</string>
     <string name="bench">Bench Press</string>
     <string name="incline">Incline Press</string>
-    <string name="flies">Dumbbell Flies</string>
+    <string name="flies">Flies</string>
     <string name="dips">Dips</string>
     <string name="pushups">Push-ups</string>
+    <string name="curls">Curls</string>
+    <string name="overhead">Overhead Press</string>
+    <string name="chinups">Chin-ups</string>
+    <string name="closegrip">Close-grip Press</string>
+    <string name="military">Shoulder Press</string>
+    <string name="latRaise">Lateral Raises</string>
     <string name="hello_second_fragment">Are you ready to get SWOLE?! Arg: %1$s</string>
     <string name="page_title">MuscleMate</string>
 </resources>

@@ -11,20 +11,86 @@
         android:id="@+id/textview_arm_exercises"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
         android:text="@string/choose_arm_exercise"
-        app:layout_constraintBottom_toTopOf="@id/button_previous"
+        app:layout_constraintBottom_toTopOf="@id/button_curls"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:id="@+id/button_curls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/curls"
+        app:layout_constraintBottom_toTopOf="@id/button_overhead"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_arm_exercises" />
+
+    <Button
+        android:id="@+id/button_overhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/overhead"
+        app:layout_constraintBottom_toTopOf="@id/button_chinups"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_curls" />
+
+    <Button
+        android:id="@+id/button_chinups"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/chinups"
+        app:layout_constraintBottom_toTopOf="@id/button_closegrip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_overhead" />
+
+    <Button
+        android:id="@+id/button_closegrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/closegrip"
+        app:layout_constraintBottom_toTopOf="@id/button_military"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_chinups" />
+
+    <Button
+        android:id="@+id/button_military"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/military"
+        app:layout_constraintBottom_toTopOf="@id/button_latRaise"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_closegrip" />
+
+    <Button
+        android:id="@+id/button_latRaise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/latRaise"
+        app:layout_constraintBottom_toTopOf="@id/button_previous"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_military" />
+
+    <Button
         android:id="@+id/button_previous"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/previous"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_arm_exercises" />
+        app:layout_constraintTop_toBottomOf="@id/button_latRaise" />
 </androidx.constraintlayout.widget.ConstraintLayout>
