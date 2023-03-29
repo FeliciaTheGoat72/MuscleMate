@@ -1,7 +1,6 @@
 package com.example.musclemate.ExerciseFragments;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,11 +10,11 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.musclemate.R;
-import com.example.musclemate.databinding.FragmentSecondBinding;
+import com.example.musclemate.databinding.AbFragmentBinding;
 
-public class CurlFragment extends Fragment {
+public class AbFragment extends Fragment {
 
-    private FragmentSecondBinding binding;
+    private AbFragmentBinding binding;
 
     @Override
     public View onCreateView(
@@ -23,7 +22,7 @@ public class CurlFragment extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = FragmentSecondBinding.inflate(inflater, container, false);
+        binding = AbFragmentBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }
@@ -31,11 +30,11 @@ public class CurlFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.buttonSecond.setOnClickListener(new View.OnClickListener() {
+        binding.buttonPrevious.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(CurlFragment.this)
-                        .navigate(R.id.action_SecondFragment_to_FirstFragment);
+                NavHostFragment.findNavController(AbFragment.this)
+                        .navigate(R.id.action_MainMenuFragment_to_AbFragment);
             }
         });
     }
@@ -43,7 +42,6 @@ public class CurlFragment extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        Log.w("MuscleMate Curl Fragment: ", "Destroying View");
         binding = null;
     }
 

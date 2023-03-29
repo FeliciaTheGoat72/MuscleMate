@@ -11,11 +11,11 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.musclemate.R;
-import com.example.musclemate.databinding.FragmentFirstBinding;
+import com.example.musclemate.databinding.ChestFragmentBinding;
 
-public class ExerciseListFragment extends Fragment {
+public class ChestFragment extends Fragment {
 
-    private FragmentFirstBinding binding;
+    private ChestFragmentBinding binding;
 
     @Override
     public View onCreateView(
@@ -23,7 +23,7 @@ public class ExerciseListFragment extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = FragmentFirstBinding.inflate(inflater, container, false);
+        binding = ChestFragmentBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }
@@ -31,19 +31,19 @@ public class ExerciseListFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.buttonChest.setOnClickListener(new View.OnClickListener() {
+        binding.buttonPrevious.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(ExerciseListFragment.this)
-                        .navigate(R.id.action_FirstFragment_to_SecondFragment);
+                NavHostFragment.findNavController(ChestFragment.this)
+                        .navigate(R.id.action_ChestFragment_to_MainMenuFragment);
             }
         });
     }
 
     @Override
     public void onDestroyView() {
-        Log.w("MuscleMate Main Activity: ", "Destroying Frag1 View");
         super.onDestroyView();
+        Log.w("MuscleMate Curl Fragment: ", "Destroying View");
         binding = null;
     }
 

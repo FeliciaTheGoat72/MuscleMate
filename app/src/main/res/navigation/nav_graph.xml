@@ -3,26 +3,65 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/MainMenuFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.example.musclemate.ExerciseFragments.ExerciseListFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        android:id="@+id/MainMenuFragment"
+        android:name="com.example.musclemate.ExerciseFragments.MuscleListFragment"
+        android:label="@string/mainmenu_fragment_label"
+        tools:layout="@layout/mainmenu_fragment">
 
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            android:id="@+id/action_MainMenuFragment_to_ChestFragment"
+            app:destination="@id/ChestFragment" />
+        <action
+            android:id="@+id/action_MainMenuFragment_to_ArmFragment"
+            app:destination="@id/ArmFragment" />
+        <action
+            android:id="@+id/action_MainMenuFragment_to_LegFragment"
+            app:destination="@id/LegFragment" />
+        <action
+            android:id="@+id/action_MainMenuFragment_to_AbFragment"
+            app:destination="@id/AbFragment" />
     </fragment>
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.example.musclemate.ExerciseFragments.CurlFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        android:id="@+id/ChestFragment"
+        android:name="com.example.musclemate.ExerciseFragments.ChestFragment"
+        android:label="@string/chest_fragment_label"
+        tools:layout="@layout/chest_fragment">
 
         <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            android:id="@+id/action_ChestFragment_to_MainMenuFragment"
+            app:destination="@id/MainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ArmFragment"
+        android:name="com.example.musclemate.ExerciseFragments.ArmFragment"
+        android:label="@string/arm_fragment_label"
+        tools:layout="@layout/arm_fragment">
+
+        <action
+            android:id="@+id/action_ArmFragment_to_MainMenuFragment"
+            app:destination="@id/MainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/LegFragment"
+        android:name="com.example.musclemate.ExerciseFragments.LegFragment"
+        android:label="@string/leg_fragment_label"
+        tools:layout="@layout/leg_fragment">
+
+        <action
+            android:id="@+id/action_LegFragment_to_MainMenuFragment"
+            app:destination="@id/MainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/AbFragment"
+        android:name="com.example.musclemate.ExerciseFragments.AbFragment"
+        android:label="@string/ab_fragment_label"
+        tools:layout="@layout/ab_fragment">
+
+        <action
+            android:id="@+id/action_AbFragment_to_MainMenuFragment"
+            app:destination="@id/MainMenuFragment" />
     </fragment>
 </navigation>

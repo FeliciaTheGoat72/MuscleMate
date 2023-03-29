@@ -1,4 +1,4 @@
-package com.example.musclemate.ExerciseActivities;
+package com.example.musclemate.ExerciseFragments;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -10,11 +10,10 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.musclemate.ExerciseFragments.MuscleListFragment;
 import com.example.musclemate.R;
 import com.example.musclemate.databinding.MainmenuFragmentBinding;
 
-public class MuscleGroupActivity extends Fragment {
+public class MuscleListFragment extends Fragment {
 
     private MainmenuFragmentBinding binding;
 
@@ -31,32 +30,31 @@ public class MuscleGroupActivity extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
         binding.buttonChest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(MuscleGroupActivity.this)
+                NavHostFragment.findNavController(MuscleListFragment.this)
                         .navigate(R.id.action_MainMenuFragment_to_ChestFragment);
             }
         });
         binding.buttonArms.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(MuscleGroupActivity.this)
+                NavHostFragment.findNavController(MuscleListFragment.this)
                         .navigate(R.id.action_MainMenuFragment_to_ArmFragment);
             }
         });
         binding.buttonLegs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(MuscleGroupActivity.this)
+                NavHostFragment.findNavController(MuscleListFragment.this)
                         .navigate(R.id.action_MainMenuFragment_to_LegFragment);
             }
         });
         binding.buttonAbs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(MuscleGroupActivity.this)
+                NavHostFragment.findNavController(MuscleListFragment.this)
                         .navigate(R.id.action_MainMenuFragment_to_AbFragment);
             }
         });
@@ -68,5 +66,5 @@ public class MuscleGroupActivity extends Fragment {
         super.onDestroyView();
         binding = null;
     }
-}
 
+}

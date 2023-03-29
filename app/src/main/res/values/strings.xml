@@ -2,11 +2,18 @@
     <string name="app_name">MuscleMate</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">MuscleMate v0.0.1</string>
-    <string name="second_fragment_label">MuscleMate v0.0.1</string>
+    <string name="mainmenu_fragment_label">MuscleMate v0.0.1</string>
+    <string name="chest_fragment_label">MuscleMate v0.0.1</string>
+    <string name="arm_fragment_label">MuscleMate v0.0.1</string>
+    <string name="leg_fragment_label">MuscleMate v0.0.1</string>
+    <string name="ab_fragment_label">MuscleMate v0.0.1</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="choose_chest_exercise">Choose a Chest exercise</string>
+    <string name="choose_arm_exercise">Choose an Arm exercise</string>
+    <string name="choose_leg_exercise">Choose a Leg exercise</string>
+    <string name="choose_ab_exercise">Choose an Abdominal exercise</string>
+
 
     <string name="hello_first_fragment">Welcome to MuscleMate</string>
     <string name="choose_muscle">Choose a Muscle you want to work</string>
