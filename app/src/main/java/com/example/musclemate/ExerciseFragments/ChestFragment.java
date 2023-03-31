@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
+import com.example.musclemate.ExerciseActivities.MuscleGroupActivity;
 import com.example.musclemate.R;
 import com.example.musclemate.databinding.ChestFragmentBinding;
 
@@ -28,16 +29,18 @@ public class ChestFragment extends Fragment {
 
     }
 
+
+
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.buttonPrevious.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NavHostFragment.findNavController(ChestFragment.this)
-                        .navigate(R.id.action_ChestFragment_to_MainMenuFragment);
-            }
-        });
+        binding.buttonBench.setOnClickListener(view1 -> NavHostFragment.findNavController(ChestFragment.this)
+                .navigate(R.id.action_ChestFragment_to_benchFragment));
+        binding.buttonIncline.setOnClickListener(view1 -> NavHostFragment.findNavController(ChestFragment.this)
+                .navigate(R.id.action_ChestFragment_to_inclineFragment));
+
+        binding.buttonPrevious.setOnClickListener(view12 -> NavHostFragment.findNavController(ChestFragment.this)
+                .navigate(R.id.action_ChestFragment_to_MainMenuFragment));
     }
 
     @Override

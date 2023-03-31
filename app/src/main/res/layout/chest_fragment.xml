@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ExerciseFragments.ChestFragment">
 
-
+    
     <TextView
         android:id="@+id/textview_chest_exercises"
         android:layout_width="wrap_content"

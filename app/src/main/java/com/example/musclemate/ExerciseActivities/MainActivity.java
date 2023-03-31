@@ -42,15 +42,15 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
 
-        binding.fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                x++;
-                String txt = "x: " + x;
-                Snackbar.make(view, "Incrementing x by 1", Snackbar.LENGTH_LONG)
-                        .setAction(txt, null).show();
-            }
-        });
+//        binding.fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                x++;
+//                String txt = "x: " + x;
+//                Snackbar.make(view, "Incrementing x by 1", Snackbar.LENGTH_LONG)
+//                        .setAction(txt, null).show();
+//            }
+//        });
     }
 
 

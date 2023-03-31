@@ -33,6 +33,12 @@
         <action
             android:id="@+id/action_ChestFragment_to_MainMenuFragment"
             app:destination="@id/MainMenuFragment" />
+        <action
+            android:id="@+id/action_ChestFragment_to_benchFragment"
+            app:destination="@id/benchFragment" />
+        <action
+            android:id="@+id/action_ChestFragment_to_inclineFragment"
+            app:destination="@id/inclineFragment" />
     </fragment>
     <fragment
         android:id="@+id/ArmFragment"
@@ -64,4 +70,14 @@
             android:id="@+id/action_AbFragment_to_MainMenuFragment"
             app:destination="@id/MainMenuFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/benchFragment"
+        android:name="com.example.musclemate.BenchFragment"
+        android:label="fragment_bench"
+        tools:layout="@layout/fragment_bench" />
+    <fragment
+        android:id="@+id/inclineFragment"
+        android:name="com.example.musclemate.inclineFragment"
+        android:label="fragment_incline"
+        tools:layout="@layout/fragment_incline" />
 </navigation>
