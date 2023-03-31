@@ -23,6 +23,9 @@
         <action
             android:id="@+id/action_MainMenuFragment_to_AbFragment"
             app:destination="@id/AbFragment" />
+        <action
+            android:id="@+id/action_MainMenuFragment_to_BackFragment"
+            app:destination="@id/BackFragment" />
     </fragment>
     <fragment
         android:id="@+id/ChestFragment"
@@ -68,6 +71,16 @@
 
         <action
             android:id="@+id/action_AbFragment_to_MainMenuFragment"
+            app:destination="@id/MainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/BackFragment"
+        android:name="com.example.musclemate.ExerciseFragments.BackFragment"
+        android:label="@string/leg_fragment_label"
+        tools:layout="@layout/leg_fragment">
+
+        <action
+            android:id="@+id/action_BackFragment_to_MainMenuFragment"
             app:destination="@id/MainMenuFragment" />
     </fragment>
     <fragment

@@ -7,12 +7,15 @@
     <string name="arm_fragment_label">MuscleMate v0.0.1</string>
     <string name="leg_fragment_label">MuscleMate v0.0.1</string>
     <string name="ab_fragment_label">MuscleMate v0.0.1</string>
+    <string name="back_fragment_label">MuscleMate v0.0.1</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="choose_chest_exercise">Choose a Chest exercise</string>
     <string name="choose_arm_exercise">Choose an Arm exercise</string>
     <string name="choose_leg_exercise">Choose a Leg exercise</string>
     <string name="choose_ab_exercise">Choose an Abdominal exercise</string>
+    <string name="choose_back_exercise">Choose an Back exercise</string>
+
 
 
     <string name="hello_first_fragment">Welcome to MuscleMate</string>

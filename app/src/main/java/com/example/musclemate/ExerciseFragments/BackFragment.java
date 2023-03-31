@@ -10,11 +10,11 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.musclemate.R;
-import com.example.musclemate.databinding.AbFragmentBinding;
+import com.example.musclemate.databinding.BackFragmentBinding;
 
-public class AbFragment extends Fragment {
+public class BackFragment extends Fragment {
 
-    private AbFragmentBinding binding;
+    private BackFragmentBinding binding;
 
     @Override
     public View onCreateView(
@@ -22,7 +22,7 @@ public class AbFragment extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = AbFragmentBinding.inflate(inflater, container, false);
+        binding = BackFragmentBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }
@@ -33,8 +33,8 @@ public class AbFragment extends Fragment {
         binding.buttonPrevious.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(AbFragment.this)
-                        .navigate(R.id.action_AbFragment_to_MainMenuFragment);
+                NavHostFragment.findNavController(BackFragment.this)
+                        .navigate(R.id.action_BackFragment_to_MainMenuFragment);
             }
         });
     }

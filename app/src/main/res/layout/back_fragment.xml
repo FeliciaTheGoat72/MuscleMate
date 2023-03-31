@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ExerciseFragments.AbFragment">
+    tools:context=".ExerciseFragments.BackFragment">
 
 
     <TextView
-        android:id="@+id/textview_ab_exercises"
+        android:id="@+id/textview_back_exercises"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/choose_ab_exercise"
+        android:text="@string/choose_back_exercise"
         app:layout_constraintBottom_toTopOf="@id/button_previous"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -26,5 +26,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_ab_exercises" />
+        app:layout_constraintTop_toBottomOf="@id/textview_back_exercises" />
 </androidx.constraintlayout.widget.ConstraintLayout>
