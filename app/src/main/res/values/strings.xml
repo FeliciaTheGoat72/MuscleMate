@@ -46,6 +46,11 @@
     <string name="deadlift">Deadlift</string>
     <string name="upright">Upright Row</string>
     <string name="dbRow">Dumbbell Row</string>
+    <string name="crunch">Bend-over Row</string>
+    <string name="situp">Sit-Ups</string>
+    <string name="plank">Plank</string>
+    <string name="russianTwist">Russian Twist</string>
+    <string name="legRaises">Leg Raises</string>
     <string name="hello_second_fragment">Are you ready to get SWOLE?! Arg: %1$s</string>
     <string name="page_title">MuscleMate</string>
     <string name="bench_desc">
