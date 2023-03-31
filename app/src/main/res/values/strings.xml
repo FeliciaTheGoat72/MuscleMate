@@ -14,7 +14,7 @@
     <string name="choose_arm_exercise">Choose an Arm exercise</string>
     <string name="choose_leg_exercise">Choose a Leg exercise</string>
     <string name="choose_ab_exercise">Choose an Abdominal exercise</string>
-    <string name="choose_back_exercise">Choose an Back exercise</string>
+    <string name="choose_back_exercise">Choose a Back exercise</string>
 
 
 
@@ -41,6 +41,11 @@
     <string name="split">Split Squat</string>
     <string name="bridge">Glute Bridges</string>
     <string name="lunge">Lunges</string>
+    <string name="bendoverRow">Bend-over Row</string>
+    <string name="pullup">Pull-Ups</string>
+    <string name="deadlift">Deadlift</string>
+    <string name="upright">Upright Row</string>
+    <string name="dbRow">Dumbbell Row</string>
     <string name="hello_second_fragment">Are you ready to get SWOLE?! Arg: %1$s</string>
     <string name="page_title">MuscleMate</string>
     <string name="bench_desc">

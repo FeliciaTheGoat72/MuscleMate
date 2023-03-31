@@ -11,12 +11,68 @@
         android:id="@+id/textview_back_exercises"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
         android:text="@string/choose_back_exercise"
-        app:layout_constraintBottom_toTopOf="@id/button_previous"
+        app:layout_constraintBottom_toTopOf="@id/button_boRow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_boRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/bendoverRow"
+        app:layout_constraintBottom_toTopOf="@id/button_pullup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_back_exercises" />
+
+    <Button
+        android:id="@+id/button_pullup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/pullup"
+        app:layout_constraintBottom_toTopOf="@id/button_deadlift"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_boRow" />
+
+    <Button
+        android:id="@+id/button_deadlift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/deadlift"
+        app:layout_constraintBottom_toTopOf="@id/button_upright"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_pullup" />
+
+    <Button
+        android:id="@+id/button_upright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/upright"
+        app:layout_constraintBottom_toTopOf="@id/button_dbRow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_deadlift" />
+
+    <Button
+        android:id="@+id/button_dbRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/dbRow"
+        app:layout_constraintBottom_toTopOf="@id/button_previous"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_upright" />
 
     <Button
         android:id="@+id/button_previous"
@@ -26,5 +82,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_back_exercises" />
+        app:layout_constraintTop_toBottomOf="@id/button_dbRow" />
 </androidx.constraintlayout.widget.ConstraintLayout>
