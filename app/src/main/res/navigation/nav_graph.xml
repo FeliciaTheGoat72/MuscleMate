@@ -42,6 +42,15 @@
         <action
             android:id="@+id/action_ChestFragment_to_inclineFragment"
             app:destination="@id/inclineFragment" />
+        <action
+            android:id="@+id/action_ChestFragment_to_fliesFragment"
+            app:destination="@id/fliesFragment" />
+        <action
+            android:id="@+id/action_ChestFragment_to_dipsFragment"
+            app:destination="@id/dipsFragment" />
+        <action
+            android:id="@+id/action_ChestFragment_to_pushUpsFragment"
+            app:destination="@id/pushUpsFragment" />
     </fragment>
     <fragment
         android:id="@+id/ArmFragment"
@@ -93,4 +102,19 @@
         android:name="com.example.musclemate.inclineFragment"
         android:label="fragment_incline"
         tools:layout="@layout/fragment_incline" />
+    <fragment
+        android:id="@+id/fliesFragment"
+        android:name="com.example.musclemate.FliesFragment"
+        android:label="fragment_flies"
+        tools:layout="@layout/fragment_flies" />
+    <fragment
+        android:id="@+id/dipsFragment"
+        android:name="com.example.musclemate.DipsFragment"
+        android:label="fragment_dips"
+        tools:layout="@layout/fragment_dips" />
+    <fragment
+        android:id="@+id/pushUpsFragment"
+        android:name="com.example.musclemate.PushUpsFragment"
+        android:label="fragment_push_ups"
+        tools:layout="@layout/fragment_push_ups" />
 </navigation>

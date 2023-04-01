@@ -13,7 +13,7 @@ import androidx.navigation.fragment.NavHostFragment;
 import com.example.musclemate.R;
 import com.example.musclemate.databinding.ChestFragmentBinding;
 
-public class ChestFragment extends Fragment implements View.OnClickListener{
+public class ChestFragment extends Fragment implements View.OnClickListener {
 
     private ChestFragmentBinding binding;
 
@@ -25,20 +25,21 @@ public class ChestFragment extends Fragment implements View.OnClickListener{
         } else if (v.getId() == R.id.button_incline) {
             NavHostFragment.findNavController(ChestFragment.this)
                     .navigate(R.id.action_ChestFragment_to_inclineFragment);
-//        } else if (v.getId() == R.id.button_arms) {
-//            NavHostFragment.findNavController(MuscleListFragment.this)
-//                    .navigate(R.id.action_MainMenuFragment_to_ArmFragment);
-//        } else if (v.getId() == R.id.button_legs) {
-//            NavHostFragment.findNavController(MuscleListFragment.this)
-//                    .navigate(R.id.action_MainMenuFragment_to_LegFragment);
-//        } else if (v.getId() == R.id.button_abs) {
-//            NavHostFragment.findNavController(MuscleListFragment.this)
-//                    .navigate(R.id.action_MainMenuFragment_to_AbFragment);
-//        }
-
+        } else if (v.getId() == R.id.button_dbFly) {
+            NavHostFragment.findNavController(ChestFragment.this)
+                    .navigate(R.id.action_ChestFragment_to_fliesFragment);
+        } else if (v.getId() == R.id.button_dips) {
+            NavHostFragment.findNavController(ChestFragment.this)
+                    .navigate(R.id.action_ChestFragment_to_dipsFragment);
+        } else if (v.getId() == R.id.button_pushups) {
+            NavHostFragment.findNavController(ChestFragment.this)
+                    .navigate(R.id.action_ChestFragment_to_pushUpsFragment);
+        } else if (v.getId() == R.id.button_previous) {
+            NavHostFragment.findNavController(ChestFragment.this)
+                    .navigate(R.id.action_ChestFragment_to_MainMenuFragment);
         }
-    }
 
+    }
 
     @Override
     public View onCreateView(
@@ -48,11 +49,13 @@ public class ChestFragment extends Fragment implements View.OnClickListener{
         binding = ChestFragmentBinding.inflate(inflater, container, false);
         binding.buttonBench.setOnClickListener(this);
         binding.buttonIncline.setOnClickListener(this);
+        binding.buttonDbFly.setOnClickListener(this);
+        binding.buttonDips.setOnClickListener(this);
+        binding.buttonPushups.setOnClickListener(this);
         binding.buttonPrevious.setOnClickListener(this);
         return binding.getRoot();
 
     }
-
 
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {

@@ -13,14 +13,14 @@
 
         app:autoPlay="true"
         app:layout_constraintTop_toTopOf="parent"
-        app:videoId="uIzbJX5EVIY" />
+        app:videoId="-lcbvOddoi8" />
 
     <TextView
-        android:id="@+id/incline_desc"
-        android:layout_width="280dp"
-        android:layout_height="456dp"
+        android:id="@+id/flies_desc"
+        android:layout_width="300dp"
+        android:layout_height="443dp"
         android:layout_marginTop="10dp"
-        android:text="@string/incline_desc"
+        android:text="@string/flies_desc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
