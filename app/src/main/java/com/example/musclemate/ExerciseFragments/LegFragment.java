@@ -20,21 +20,21 @@ public class LegFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        if (v.getId() == R.id.button_bench) {
+        if (v.getId() == R.id.button_bridge) {
             NavHostFragment.findNavController(LegFragment.this)
-                    .navigate(R.id.action_LegFragment_to_benchFragment);
-        } else if (v.getId() == R.id.button_incline) {
+                    .navigate(R.id.action_LegFragment_to_bridgeFragment);
+        } else if (v.getId() == R.id.button_rdl) {
             NavHostFragment.findNavController(LegFragment.this)
-                    .navigate(R.id.action_LegFragment_to_inclineFragment);
-        } else if (v.getId() == R.id.button_dbFly) {
+                    .navigate(R.id.action_LegFragment_to_RDLFragment);
+        } else if (v.getId() == R.id.button_split) {
             NavHostFragment.findNavController(LegFragment.this)
-                    .navigate(R.id.action_LegFragment_to_fliesFragment);
-        } else if (v.getId() == R.id.button_dips) {
+                    .navigate(R.id.action_LegFragment_to_splitSquatFragment);
+        } else if (v.getId() == R.id.button_squat) {
             NavHostFragment.findNavController(LegFragment.this)
-                    .navigate(R.id.action_LegFragment_to_dipsFragment);
-        } else if (v.getId() == R.id.button_pushups) {
+                    .navigate(R.id.action_LegFragment_to_squatFragment);
+        } else if (v.getId() == R.id.button_lunge) {
             NavHostFragment.findNavController(LegFragment.this)
-                    .navigate(R.id.action_LegFragment_to_pushUpsFragment);
+                    .navigate(R.id.action_LegFragment_to_lungeFragment);
         } else if (v.getId() == R.id.button_previous) {
             NavHostFragment.findNavController(LegFragment.this)
                     .navigate(R.id.action_LegFragment_to_MainMenuFragment);
@@ -48,11 +48,11 @@ public class LegFragment extends Fragment implements View.OnClickListener {
             Bundle savedInstanceState
     ) {
         binding = LegFragmentBinding.inflate(inflater, container, false);
-        binding.buttonBench.setOnClickListener(this);
-        binding.buttonIncline.setOnClickListener(this);
-        binding.buttonDbFly.setOnClickListener(this);
-        binding.buttonDips.setOnClickListener(this);
-        binding.buttonPushups.setOnClickListener(this);
+        binding.buttonSquat.setOnClickListener(this);
+        binding.buttonSplit.setOnClickListener(this);
+        binding.buttonRdl.setOnClickListener(this);
+        binding.buttonLunge.setOnClickListener(this);
+        binding.buttonBridge.setOnClickListener(this);
         binding.buttonPrevious.setOnClickListener(this);
         return binding.getRoot();
 

@@ -71,6 +71,21 @@
         <action
             android:id="@+id/action_LegFragment_to_MainMenuFragment"
             app:destination="@id/MainMenuFragment" />
+        <action
+            android:id="@+id/action_LegFragment_to_RDLFragment"
+            app:destination="@id/RDLFragment" />
+        <action
+            android:id="@+id/action_LegFragment_to_splitSquatFragment"
+            app:destination="@id/splitSquatFragment" />
+        <action
+            android:id="@+id/action_LegFragment_to_squatFragment"
+            app:destination="@id/squatFragment" />
+        <action
+            android:id="@+id/action_LegFragment_to_lungeFragment"
+            app:destination="@id/lungeFragment" />
+        <action
+            android:id="@+id/action_LegFragment_to_bridgeFragment"
+            app:destination="@id/bridgeFragment" />
     </fragment>
     <fragment
         android:id="@+id/AbFragment"
@@ -81,6 +96,9 @@
         <action
             android:id="@+id/action_AbFragment_to_MainMenuFragment"
             app:destination="@id/MainMenuFragment" />
+        <action
+            android:id="@+id/action_AbFragment_to_bendOverRowFragment"
+            app:destination="@id/bendOverRowFragment" />
     </fragment>
     <fragment
         android:id="@+id/BackFragment"
@@ -117,4 +135,34 @@
         android:name="com.example.musclemate.PushUpsFragment"
         android:label="fragment_push_ups"
         tools:layout="@layout/fragment_push_ups" />
+    <fragment
+        android:id="@+id/bendOverRowFragment"
+        android:name="com.example.musclemate.BendOverRowFragment"
+        android:label="fragment_bend_over_row"
+        tools:layout="@layout/fragment_bend_over_row" />
+    <fragment
+        android:id="@+id/RDLFragment"
+        android:name="com.example.musclemate.RDLFragment"
+        android:label="fragment_r_d_l"
+        tools:layout="@layout/fragment_r_d_l" />
+    <fragment
+        android:id="@+id/splitSquatFragment"
+        android:name="com.example.musclemate.SplitSquatFragment"
+        android:label="fragment_split_squat"
+        tools:layout="@layout/fragment_split_squat" />
+    <fragment
+        android:id="@+id/squatFragment"
+        android:name="com.example.musclemate.SquatFragment"
+        android:label="fragment_squat"
+        tools:layout="@layout/fragment_squat" />
+    <fragment
+        android:id="@+id/lungeFragment"
+        android:name="com.example.musclemate.LungeFragment"
+        android:label="fragment_lunge"
+        tools:layout="@layout/fragment_lunge" />
+    <fragment
+        android:id="@+id/bridgeFragment"
+        android:name="com.example.musclemate.BridgeFragment"
+        android:label="fragment_bridge"
+        tools:layout="@layout/fragment_bridge" />
 </navigation>
