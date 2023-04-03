@@ -61,6 +61,24 @@
         <action
             android:id="@+id/action_ArmFragment_to_MainMenuFragment"
             app:destination="@id/MainMenuFragment" />
+        <action
+            android:id="@+id/action_ArmFragment_to_CurlFragment"
+            app:destination="@id/curlFragment" />
+        <action
+            android:id="@+id/action_ArmFragment_to_OverheadFragment"
+            app:destination="@id/overheadFragment" />
+        <action
+            android:id="@+id/action_ArmFragment_to_ChinUpsFragment"
+            app:destination="@id/chinUpsFragment" />
+        <action
+            android:id="@+id/action_ArmFragment_to_CloseGripFragment"
+            app:destination="@id/closeGripFragment" />
+        <action
+            android:id="@+id/action_ArmFragment_to_ShoulderPressFragment"
+            app:destination="@id/shoulderPressFragment" />
+        <action
+            android:id="@+id/action_ArmFragment_to_LateralRaiseFragment"
+            app:destination="@id/lateralRaiseFragment" />
     </fragment>
     <fragment
         android:id="@+id/LegFragment"
@@ -237,4 +255,34 @@
         android:name="com.example.musclemate.BridgeFragment"
         android:label="fragment_bridge"
         tools:layout="@layout/fragment_bridge" />
+    <fragment
+        android:id="@+id/curlFragment"
+        android:name="com.example.musclemate.CurlFragment"
+        android:label="fragment_curl"
+        tools:layout="@layout/fragment_curl" />
+    <fragment
+        android:id="@+id/overheadFragment"
+        android:name="com.example.musclemate.OverheadFragment"
+        android:label="fragment_overhead_press"
+        tools:layout="@layout/fragment_overhead_press" />
+    <fragment
+        android:id="@+id/chinUpsFragment"
+        android:name="com.example.musclemate.ChinUpsFragment"
+        android:label="fragment_chin_ups"
+        tools:layout="@layout/fragment_chin_ups" />
+    <fragment
+        android:id="@+id/closeGripFragment"
+        android:name="com.example.musclemate.CloseGripFragment"
+        android:label="fragment_close_grip"
+        tools:layout="@layout/fragment_close_grip" />
+    <fragment
+        android:id="@+id/shoulderPressFragment"
+        android:name="com.example.musclemate.ShoulderPressFragment"
+        android:label="fragment_shoulder_press"
+        tools:layout="@layout/fragment_shoulder_press" />
+    <fragment
+        android:id="@+id/lateralRaiseFragment"
+        android:name="com.example.musclemate.LateralRaiseFragment"
+        android:label="fragment_lateral_raise"
+        tools:layout="@layout/fragment_lateral_raise" />
 </navigation>

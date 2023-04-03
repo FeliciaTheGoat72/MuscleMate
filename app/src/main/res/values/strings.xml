@@ -65,6 +65,82 @@
 
         Perform 5 to 10 reps, depending on weight used. Perform up to 3 sets.</string>
 
+    <string name="curl_desc">
+        Stand with your feet shoulder-width apart and hold a dumbbell in each hand. Your palms should be facing forward and your arms should be straight down by your sides.
+
+        Slowly raise one dumbbell towards your shoulder, while keeping your elbow close to your body. Your forearm should be perpendicular to the ground at the top of the movement.
+
+        Hold the contraction for a second and then slowly lower the weight back down to the starting position.
+
+        Repeat the same movement with the other arm.
+
+        Continue to alternate arms until you have completed the desired number of reps.
+
+        Aim for 8-12 reps for 2-3 sets, gradually increasing the weight as you become stronger.</string>
+
+    <string name="overhead_desc">
+        Stand or sit with your feet shoulder-width apart and hold a dumbbell in each hand. Your palms should be facing forward, and your arms should be bent at a 90-degree angle, with your elbows at shoulder height and your forearms pointing upwards.
+
+        Lift the dumbbells up to shoulder level, making sure your elbows are directly under your wrists and your palms are facing forward.
+
+        Take a deep breath and brace your core.
+
+        Press the dumbbells overhead, extending your arms fully until they are straight up above your head. Make sure your shoulders are down and back, and your neck is neutral.
+
+        Hold the top position for a second, then slowly lower the weights back down to your shoulders.
+
+        Repeat the movement for the desired number of reps.
+
+        Aim for 8-12 reps for 2-3 sets, gradually increasing the weight as you become stronger. </string>
+
+    <string name="chin_ups_desc">
+        Stand beneath a pull-up bar and reach up to grip the bar with your palms facing towards you. Your hands should be shoulder-width apart, or slightly closer if that feels more comfortable.
+        Hang from the bar with your arms fully extended, your shoulders down and back, and your core engaged.
+        Pull your body up towards the bar, keeping your elbows close to your sides and your chin above the bar.
+        Hold the top position for a second, squeezing your shoulder blades together and keeping your core engaged.
+        Slowly lower your body back down to the starting position, fully extending your arms.
+        Repeat the movement for the desired number of reps.
+        If you are new to chin-ups or find them challenging, you can try using a resistance band or a
+        spotter to help you perform the movement. Aim for 8-12 reps for 2-3 sets, gradually increasing the number of reps
+        or sets as you become stronger. Remember to keep proper form throughout the exercise, avoiding any swinging or kipping movements,
+        to prevent injury and get the most out of the exercise. </string>
+
+    <string name="close_grip_desc">
+        Lie flat on a bench with your feet on the ground and your head at the end of the bench. Grab the bar with your palms facing towards your body, and your hands close together, just a few inches apart.
+
+        Lift the bar off the rack and hold it above your chest with your arms fully extended.
+
+        Slowly lower the bar towards your chest, keeping your elbows tucked in close to your sides. Your forearms should be perpendicular to the ground at the bottom of the movement.
+
+        Hold the bottom position for a second, then press the bar back up to the starting position, fully extending your arms.
+
+        Repeat the movement for the desired number of reps.
+
+        Aim for 8-12 reps for 2-3 sets, gradually increasing the weight as you become stronger. Remember to keep proper form throughout the exercise, avoiding any bouncing or arching of the back, to prevent injury and get the most out of the exercise. Close-grip presses can be performed with a barbell or dumbbells, and can also be done on a Smith machine or with a resistance band.</string>
+
+    <string name="shoulder_press_desc">
+       Stand or sit with your feet shoulder-width apart, and hold a dumbbell in each hand at shoulder level. Your palms should be facing forward, and your elbows should be bent.
+
+        Take a deep breath, brace your core, and lift the dumbbells up to shoulder level, making sure your elbows are directly under your wrists.
+
+        Press the dumbbells up above your head, extending your arms fully until they are straight up. Make sure your shoulders are down and back, and your neck is neutral.
+
+        Hold the top position for a second, then slowly lower the weights back down to your shoulders.
+
+        Repeat the movement for the desired number of reps.
+
+        Aim for 8-12 reps for 2-3 sets, gradually increasing the weight as you become stronger. </string>
+
+    <string name="lateral_raise_desc">
+        Stand with your feet shoulder-width apart, and hold a dumbbell in each hand at your sides. Your palms should be facing inward.
+
+        Keeping your core engaged, slowly lift both dumbbells out to the sides until they are at shoulder level. Your arms should be straight, but not locked, and your elbows should be slightly bent.
+
+        Hold the top position for a second, then slowly lower the weights back down to your sides.
+
+        Repeat the movement for the desired number of reps.</string>
+
+
     <string name="incline_desc">
 
         Lie flat on an incline bench and set your hands just outside of shoulder width.

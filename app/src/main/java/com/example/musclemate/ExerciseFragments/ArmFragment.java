@@ -12,7 +12,7 @@ import androidx.navigation.fragment.NavHostFragment;
 import com.example.musclemate.R;
 import com.example.musclemate.databinding.ArmFragmentBinding;
 
-public class ArmFragment extends Fragment {
+public class ArmFragment extends Fragment implements View.OnClickListener {
 
     private ArmFragmentBinding binding;
 
@@ -21,21 +21,49 @@ public class ArmFragment extends Fragment {
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
-
         binding = ArmFragmentBinding.inflate(inflater, container, false);
+        binding.buttonPrevious.setOnClickListener(this);
+        binding.buttonCurls.setOnClickListener(this);
+        binding.buttonOverhead.setOnClickListener(this);
+        binding.buttonChinups.setOnClickListener(this);
+        binding.buttonClosegrip.setOnClickListener(this);
+        binding.buttonLatRaise.setOnClickListener(this);
+        binding.buttonMilitary.setOnClickListener(this);
         return binding.getRoot();
+    }
 
+    @Override
+    public void onClick(View view) {
+        if (view.getId() == R.id.button_previous) {
+            NavHostFragment.findNavController(this)
+                    .navigate(R.id.action_ArmFragment_to_MainMenuFragment);
+        } else if (view.getId() == R.id.button_curls) {
+            NavHostFragment.findNavController(this)
+                    .navigate(R.id.action_ArmFragment_to_CurlFragment);
+        } else if (view.getId() == R.id.button_overhead) {
+            NavHostFragment.findNavController(this)
+                    .navigate(R.id.action_ArmFragment_to_OverheadFragment);
+        } else if (view.getId() == R.id.button_chinups) {
+            NavHostFragment.findNavController(this)
+                    .navigate(R.id.action_ArmFragment_to_ChinUpsFragment);
+        } else if (view.getId() == R.id.button_closegrip) {
+            NavHostFragment.findNavController(this)
+                    .navigate(R.id.action_ArmFragment_to_CloseGripFragment);
+        } else if (view.getId() == R.id.button_military) {
+            NavHostFragment.findNavController(this)
+                    .navigate(R.id.action_ArmFragment_to_ShoulderPressFragment);
+        } else if (view.getId() == R.id.button_latRaise) {
+        NavHostFragment.findNavController(this)
+                .navigate(R.id.action_ArmFragment_to_LateralRaiseFragment);
+        }
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        binding.buttonPrevious.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NavHostFragment.findNavController(ArmFragment.this)
-                        .navigate(R.id.action_ArmFragment_to_MainMenuFragment);
-            }
-        });
+
+//        binding.buttonPrevious.setOnClickListener(new View.OnClickListener() {
+//
+//        });
     }
 
     @Override
