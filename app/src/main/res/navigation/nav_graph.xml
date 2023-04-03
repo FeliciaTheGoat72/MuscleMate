@@ -104,11 +104,26 @@
         android:id="@+id/BackFragment"
         android:name="com.example.musclemate.ExerciseFragments.BackFragment"
         android:label="@string/leg_fragment_label"
-        tools:layout="@layout/leg_fragment">
+        tools:layout="@layout/back_fragment">
 
         <action
             android:id="@+id/action_BackFragment_to_MainMenuFragment"
             app:destination="@id/MainMenuFragment" />
+        <action
+            android:id="@+id/action_BackFragment_to_bendOverRowFragment"
+            app:destination="@id/bendOverRowFragment" />
+        <action
+            android:id="@+id/action_BackFragment_to_pullupFragment"
+            app:destination="@id/pullupFragment" />
+        <action
+            android:id="@+id/action_BackFragment_to_deadliftFragment"
+            app:destination="@id/deadliftFragment" />
+        <action
+            android:id="@+id/action_BackFragment_to_uprightRowFragment"
+            app:destination="@id/uprightRowFragment" />
+        <action
+            android:id="@+id/action_BackFragment_to_dbRowFragment"
+            app:destination="@id/dbRowFragment" />
     </fragment>
     <fragment
         android:id="@+id/benchFragment"
@@ -140,6 +155,26 @@
         android:name="com.example.musclemate.BendOverRowFragment"
         android:label="fragment_bend_over_row"
         tools:layout="@layout/fragment_bend_over_row" />
+    <fragment
+        android:id="@+id/pullupFragment"
+        android:name="com.example.musclemate.PullUpFragment"
+        android:label="fragment_pullup"
+        tools:layout="@layout/fragment_pull_up" />
+    <fragment
+        android:id="@+id/deadliftFragment"
+        android:name="com.example.musclemate.DeadliftFragment"
+        android:label="fragment_deadlift"
+        tools:layout="@layout/fragment_deadlift" />
+    <fragment
+        android:id="@+id/uprightRowFragment"
+        android:name="com.example.musclemate.UprightRowFragment"
+        android:label="fragment_upright_row"
+        tools:layout="@layout/fragment_upright_row" />
+    <fragment
+        android:id="@+id/dbRowFragment"
+        android:name="com.example.musclemate.DbRowFragment"
+        android:label="fragment_db_row"
+        tools:layout="@layout/fragment_db_row" />
     <fragment
         android:id="@+id/RDLFragment"
         android:name="com.example.musclemate.RDLFragment"
