@@ -8,16 +8,12 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.musclemate.ExerciseFragments.MuscleListFragment;
-import com.example.musclemate.R;
 import com.example.musclemate.databinding.MainmenuFragmentBinding;
 
-public class MuscleGroupActivity extends Fragment{
+public class MuscleGroupActivity extends Fragment {
 
     private MainmenuFragmentBinding binding;
-
 
 
     @Override
@@ -41,4 +37,3 @@ public class MuscleGroupActivity extends Fragment{
         binding = null;
     }
 }
-

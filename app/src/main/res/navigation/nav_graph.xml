@@ -26,6 +26,9 @@
         <action
             android:id="@+id/action_MainMenuFragment_to_BackFragment"
             app:destination="@id/BackFragment" />
+        <action
+            android:id="@+id/action_MainMenuFragment_to_randomActivity"
+            app:destination="@id/randomActivity" />
     </fragment>
     <fragment
         android:id="@+id/ChestFragment"
@@ -165,4 +168,9 @@
         android:name="com.example.musclemate.BridgeFragment"
         android:label="fragment_bridge"
         tools:layout="@layout/fragment_bridge" />
+    <activity
+        android:id="@+id/randomActivity"
+        android:name="com.example.musclemate.RandomActivity"
+        android:label="activity_random"
+        tools:layout="@layout/activity_random" />
 </navigation>
