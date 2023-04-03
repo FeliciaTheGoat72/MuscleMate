@@ -26,9 +26,7 @@
         <action
             android:id="@+id/action_MainMenuFragment_to_BackFragment"
             app:destination="@id/BackFragment" />
-        <action
-            android:id="@+id/action_MainMenuFragment_to_randomActivity"
-            app:destination="@id/randomActivity" />
+
     </fragment>
     <fragment
         android:id="@+id/ChestFragment"

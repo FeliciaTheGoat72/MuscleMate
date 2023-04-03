@@ -79,9 +79,6 @@ public class MuscleListFragment extends Fragment implements View.OnClickListener
         } else if (v.getId() == R.id.button_abs) {
             NavHostFragment.findNavController(MuscleListFragment.this)
                     .navigate(R.id.action_MainMenuFragment_to_AbFragment);
-        } else if (v.getId() == R.id.button_random) {
-            NavHostFragment.findNavController(MuscleListFragment.this)
-                    .navigate(R.id.action_MainMenuFragment_to_randomActivity);
         }
 
     }

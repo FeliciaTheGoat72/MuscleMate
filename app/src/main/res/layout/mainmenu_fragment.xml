@@ -80,17 +80,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button_legs" />
 
-    <Button
-        android:id="@+id/button_random"
-        android:layout_width="114dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="28dp"
-        android:text="@string/random"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_abs"
-        app:layout_constraintVertical_bias="0.018" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
