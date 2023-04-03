@@ -13,14 +13,14 @@
 
         app:autoPlay="true"
         app:layout_constraintTop_toTopOf="parent"
-        app:videoId="paCfxhgW6bI" />
+        app:videoId="eGo4IYlbE5g" />
 
     <TextView
-        android:id="@+id/RDL_desc"
+        android:id="@+id/pullup_desc"
         android:layout_width="319dp"
         android:layout_height="432dp"
         android:layout_marginTop="10dp"
-        android:text="@string/RDL_desc"
+        android:text="@string/pullup_desc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"

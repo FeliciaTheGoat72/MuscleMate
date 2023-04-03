@@ -137,6 +137,44 @@
         Return to the starting position and repeat for the desired number of repetitions.
 
 </string>
+    <string name="pullup_desc">
+        Stand beneath the bar and grasp it approximately shoulder-width.
+
+        Tighten your core before beginning. Pull up, focusing on driving your elbows back.
+
+        Continue pulling up with your chest slightly upward and your back slightly arched until your chin / chest reach the bar.
+
+        Descend slowly, feeling the squeeze in your back on the way down. Repeat.
+
+</string>
+    <string name="deadlift_desc">
+        Stand in front of the bar, bending your knees and sinking your hips down to grab it, keeping your back straight.
+
+        Grip the bar from slightly wider than shoulder width. Sink your hips. Your chest should be upright and back straight.
+
+        Drive your hips back and down in a standing-up motion. Keep your back straight at all times and thrust your hips forward in the top half.
+
+        Lock out at the top, and sink your hips slowly to descend and repeat.
+
+</string>
+    <string name="upright_desc">
+        Grab the bar slightly more narrow than shoulder width. Pull it to your chin.
+
+        While pulling, keep your elbows above your hands. Squeeze at the top.
+
+        Descend slowly, keeping tension in the traps. Repeat.
+
+</string>
+    <string name="db_row_desc">
+        For right hand (flip for left): Set the dumbbell in the middle of a bench.
+
+        Place your left knee in front of it and your left hand behind it at a distance that makes your back parallel with the bench.
+
+        Grab the dumbell with your right hand and allow it to hang to the right of the bench.
+
+        Drive your elbow back, pulling the dumbbell to your right oblique. Squeeze your right lat and descend slowly. Repeat.
+
+</string>
     <string name="split_squat_desc">
         Select a dumbbell and position it at chest height with one hand under each edge of the dumbbell.
 
