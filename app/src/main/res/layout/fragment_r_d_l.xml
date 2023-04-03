@@ -16,11 +16,11 @@
         app:videoId="-m45n1_x32E" />
 
     <TextView
-        android:id="@+id/bend_over_row_desc"
+        android:id="@+id/r_d_l_desc"
         android:layout_width="298dp"
         android:layout_height="377dp"
         android:layout_marginTop="10dp"
-        android:text="@string/bend_over_row_desc"
+        android:text="@string/RDL_desc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
