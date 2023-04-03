@@ -97,8 +97,20 @@
             android:id="@+id/action_AbFragment_to_MainMenuFragment"
             app:destination="@id/MainMenuFragment" />
         <action
-            android:id="@+id/action_AbFragment_to_bendOverRowFragment"
-            app:destination="@id/bendOverRowFragment" />
+            android:id="@+id/action_AbFragment_to_crunchFragment"
+            app:destination="@id/crunchFragment" />
+        <action
+            android:id="@+id/action_AbFragment_to_situpFragment"
+            app:destination="@id/situpFragment" />
+        <action
+            android:id="@+id/action_AbFragment_to_plankFragment"
+            app:destination="@id/plankFragment" />
+        <action
+            android:id="@+id/action_AbFragment_to_rTwistFragment"
+            app:destination="@id/rTwistFragment" />
+        <action
+            android:id="@+id/action_AbFragment_to_legRaiseFragment"
+            app:destination="@id/legRaiseFragment" />
     </fragment>
     <fragment
         android:id="@+id/BackFragment"
@@ -170,6 +182,31 @@
         android:name="com.example.musclemate.UprightRowFragment"
         android:label="fragment_upright_row"
         tools:layout="@layout/fragment_upright_row" />
+    <fragment
+        android:id="@+id/crunchFragment"
+        android:name="com.example.musclemate.CrunchFragment"
+        android:label="fragment_crunch"
+        tools:layout="@layout/fragment_crunch" />
+    <fragment
+        android:id="@+id/situpFragment"
+        android:name="com.example.musclemate.SitUpFragment"
+        android:label="fragment_sit_up"
+        tools:layout="@layout/fragment_sit_up" />
+    <fragment
+        android:id="@+id/plankFragment"
+        android:name="com.example.musclemate.PlankFragment"
+        android:label="fragment_plank"
+        tools:layout="@layout/fragment_plank" />
+    <fragment
+        android:id="@+id/rTwistFragment"
+        android:name="com.example.musclemate.RTwistFragment"
+        android:label="fragment_rTwist"
+        tools:layout="@layout/fragment_r_twist" />
+    <fragment
+        android:id="@+id/legRaiseFragment"
+        android:name="com.example.musclemate.LegRaiseFragment"
+        android:label="fragment_leg_raise"
+        tools:layout="@layout/fragment_leg_raise" />
     <fragment
         android:id="@+id/dbRowFragment"
         android:name="com.example.musclemate.DbRowFragment"

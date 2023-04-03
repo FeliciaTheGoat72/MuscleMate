@@ -45,7 +45,7 @@
     <string name="deadlift">Deadlift</string>
     <string name="upright">Upright Row</string>
     <string name="dbRow">Dumbbell Row</string>
-    <string name="crunch">Bend-over Row</string>
+    <string name="crunch">Crunches</string>
     <string name="situp">Sit-Ups</string>
     <string name="plank">Plank</string>
     <string name="russianTwist">Russian Twist</string>
@@ -173,6 +173,44 @@
         Grab the dumbell with your right hand and allow it to hang to the right of the bench.
 
         Drive your elbow back, pulling the dumbbell to your right oblique. Squeeze your right lat and descend slowly. Repeat.
+
+</string>
+    <string name="crunch_desc">
+        Lie on your back. Place your hands at your ears and bring your knees toward your chest until they are 90 degrees.
+
+        With your abdomen, pull your upper body toward your knees. Focus on squeezing your abs and keeping your back as straight as possible.
+
+        Bring your back to the ground slowly, feeling the squeeze in your abs.
+
+</string>
+    <string name="situp_desc">
+        Lie on your back. Place your hands at your ears and bring your feet close to your butt while keeping them flat on the ground.
+
+        With your abdomen, pull your upper body toward your knees. Focus on squeezing your abs and keeping your back as straight as possible.
+
+        Bring your back to the ground slowly, feeling the squeeze in your abs.
+
+</string>
+    <string name="plank_desc">
+        Lie on your stomach and push yourself up parallel with the ground. Shift your stance from your hands to your elbows.
+
+        Keep your feet together and your back flat. Squeeze your core and hold as long as you can.
+
+</string>
+    <string name="rTwist_desc">
+        Sit down and hold your feet above the ground with your knees slightly bent. Clasp your hands or a weight
+
+        above your core and rotate to the right, touching the ground to your right while keeping your feet still
+
+        and core tight. Quickly then rotate to the left touching the ground, and repeat.
+
+</string>
+    <string name="leg_raise_desc">
+        Lie on your back with your legs straight out in front of you. Place your hands at your side, on the ground.
+
+        Keeping your legs straight, raise them to 90 degrees. Squeeze your core the entire time.
+
+        Slowly descend to 6 inches above the ground and repeat.
 
 </string>
     <string name="split_squat_desc">

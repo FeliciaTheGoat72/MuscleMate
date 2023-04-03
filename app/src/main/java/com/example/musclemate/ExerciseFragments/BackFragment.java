@@ -56,10 +56,6 @@ public class BackFragment extends Fragment implements View.OnClickListener {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
-//        binding.buttonPrevious.setOnClickListener(new View.OnClickListener() {
-//
-//        });
     }
 
     @Override
