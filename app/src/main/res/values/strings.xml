@@ -340,6 +340,9 @@
         Bridge your hips up by squeezing your glutes and driving your heels into the floor.
 
         Lower the leg back to the starting position and repeat for the desired number of repetitions on both sides.</string>
+    <string name="random">Random</string>
+    <string name="random_greeting">Shake to get a random workout!</string>
+    <string name="randomWorkout">\?</string>
 
 
 </resources>

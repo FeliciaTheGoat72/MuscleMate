@@ -19,47 +19,7 @@ import java.util.Random;
 public class MuscleListFragment extends Fragment implements View.OnClickListener {
 
 
-    ShakeDetector.ShakeListener shakeListener = new ShakeDetector.ShakeListener() {
-        @Override
-        public void onShakeDetected() {
-            System.out.println("shaking");
 
-            Random rand = new Random();
-
-            int randNumb = rand.nextInt(5);
-
-            switch (randNumb) {
-                case 0:
-                    NavHostFragment.findNavController(MuscleListFragment.this)
-                            .navigate(R.id.action_MainMenuFragment_to_ChestFragment);
-                    break;
-                case 1:
-                    NavHostFragment.findNavController(MuscleListFragment.this)
-                            .navigate(R.id.action_MainMenuFragment_to_BackFragment);
-                    break;
-                case 2:
-                    NavHostFragment.findNavController(MuscleListFragment.this)
-                            .navigate(R.id.action_MainMenuFragment_to_ArmFragment);
-                    break;
-                case 3:
-                    NavHostFragment.findNavController(MuscleListFragment.this)
-                            .navigate(R.id.action_MainMenuFragment_to_LegFragment);
-                    break;
-                case 4:
-                    NavHostFragment.findNavController(MuscleListFragment.this)
-                            .navigate(R.id.action_MainMenuFragment_to_AbFragment);
-                    break;
-                default:
-                    System.out.println("how the fuck did you get here bruh");
-            }
-        }
-
-        @Override
-        public void onShakeStopped() {
-            System.out.println("shaking stopped");
-        }
-
-    };
     private MainmenuFragmentBinding binding;
 
     @Override
@@ -80,7 +40,10 @@ public class MuscleListFragment extends Fragment implements View.OnClickListener
             NavHostFragment.findNavController(MuscleListFragment.this)
                     .navigate(R.id.action_MainMenuFragment_to_AbFragment);
         }
-
+        else if (v.getId() == R.id.button_random) {
+            NavHostFragment.findNavController(MuscleListFragment.this)
+                    .navigate(R.id.action_MainMenuFragment_to_randomActivity);
+        }
     }
 
     @Override
@@ -94,6 +57,7 @@ public class MuscleListFragment extends Fragment implements View.OnClickListener
         binding.buttonArms.setOnClickListener(this);
         binding.buttonLegs.setOnClickListener(this);
         binding.buttonAbs.setOnClickListener(this);
+        binding.buttonRandom.setOnClickListener((this));
 
 
         return binding.getRoot();

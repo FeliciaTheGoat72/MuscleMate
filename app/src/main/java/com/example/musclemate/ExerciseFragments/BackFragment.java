@@ -50,7 +50,7 @@ public class BackFragment extends Fragment implements View.OnClickListener {
                     .navigate(R.id.action_BackFragment_to_uprightRowFragment);
         } else if (view.getId() == R.id.button_dbRow) {
             NavHostFragment.findNavController(BackFragment.this)
-                    .navigate(R.id.action_BackFragment_to_bendOverRowFragment);
+                    .navigate(R.id.action_BackFragment_to_dbRowFragment);
         }
     }
 
