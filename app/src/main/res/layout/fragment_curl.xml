@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:layout_width="409dp"
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="409dp"
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
     tools:layout_editor_absoluteX="1dp"
     tools:layout_editor_absoluteY="111dp"
     android:layout_gravity="center"
     xmlns:android="http://schemas.android.com/apk/res/android">
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -24,8 +23,8 @@
 
     <TextView
         android:id="@+id/curl_desc"
-        android:layout_width="396dp"
-        android:layout_height="265dp"
+        android:layout_width="332dp"
+        android:layout_height="271dp"
         android:layout_marginTop="10dp"
         android:text="@string/curl_desc"
         app:layout_constraintEnd_toEndOf="parent"
