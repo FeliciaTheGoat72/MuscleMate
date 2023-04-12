@@ -12,12 +12,10 @@ import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.musclemate.R;
 import com.example.musclemate.databinding.MainmenuFragmentBinding;
-import com.github.nisrulz.sensey.ShakeDetector;
 
-import java.util.Random;
+import java.util.ArrayList;
 
 public class MuscleListFragment extends Fragment implements View.OnClickListener {
-
 
 
     private MainmenuFragmentBinding binding;
@@ -39,8 +37,7 @@ public class MuscleListFragment extends Fragment implements View.OnClickListener
         } else if (v.getId() == R.id.button_abs) {
             NavHostFragment.findNavController(MuscleListFragment.this)
                     .navigate(R.id.action_MainMenuFragment_to_AbFragment);
-        }
-        else if (v.getId() == R.id.button_random) {
+        } else if (v.getId() == R.id.button_random) {
             NavHostFragment.findNavController(MuscleListFragment.this)
                     .navigate(R.id.action_MainMenuFragment_to_randomActivity);
         }
@@ -66,6 +63,13 @@ public class MuscleListFragment extends Fragment implements View.OnClickListener
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        ArrayList<Integer> arrlist = new ArrayList<Integer>();
+
+//        for (int i = 0; i < 1000000; i++) {
+//            arrlist.add(i);
+//            i++;
+//        }
 
 
     }
