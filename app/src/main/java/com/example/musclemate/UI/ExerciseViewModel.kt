@@ -24,8 +24,4 @@ class MainViewModel(private val repository: ExerciseRepository) : ViewModel()
     fun delete(item: Exercises) = GlobalScope.launch {
         repository.delete(item)
     }
-
-    fun allExercises() = repository.allExercises()
-//    private Repository mRepository;
-//    private final LiveData<List<IExercise>> mExercises;
 }

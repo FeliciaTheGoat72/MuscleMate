@@ -1,11 +1,11 @@
 package com.example.musclemate
 import com.example.musclemate.Database.Entity.Exercises
-import com.example.musclemate.Database.ExerciseDatabase
+import com.example.musclemate.Database.Entity.ExerciseDatabase
 
 class ExerciseRepository(private val db: ExerciseDatabase) {
 
-    suspend fun insert(item: Exercises) = db.getExerciseDao().insert(item)
-    suspend fun delete(item: Exercises) = db.getExerciseDao().delete(item)
+    suspend fun insert(item: Exercises) = db.exerciseDao().insert(item)
+    suspend fun delete(item: Exercises) = db.exerciseDao().delete(item)
 
-    fun allExercises() = db.getExerciseDao().readExercises()
+    fun allExercises() = db.exerciseDao().getAll()
 }
