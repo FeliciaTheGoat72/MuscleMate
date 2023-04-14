@@ -18,7 +18,7 @@ import java.util.ArrayList;
 public class MuscleListFragment extends Fragment implements View.OnClickListener {
 
 
-    private MainmenuFragmentBinding binding;
+    public MainmenuFragmentBinding binding;
 
     @Override
     public void onClick(View v) {
