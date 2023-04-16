@@ -2,13 +2,13 @@ package com.example.musclemate.ExerciseActivities;
 
 import android.os.Bundle;
 
+import com.example.musclemate.Database.Entity.DatabaseThread;
+import com.example.musclemate.Database.Entity.ExerciseDatabase;
 import com.example.musclemate.R;
-import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.util.Log;
-import android.view.View;
 
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
+
+    private ExerciseDatabase db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,16 +45,13 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+        //DatabaseThread d = new DatabaseThread(getApplicationContext());
+        //Thread dbThread = new Thread(d);
+        //dbThread.start();
 
-//        binding.fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                x++;
-//                String txt = "x: " + x;
-//                Snackbar.make(view, "Incrementing x by 1", Snackbar.LENGTH_LONG)
-//                        .setAction(txt, null).show();
-//            }
-//        });
+
+
+
     }
 
 

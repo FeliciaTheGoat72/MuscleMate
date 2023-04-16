@@ -10,13 +10,12 @@ public class Exercises {
     @PrimaryKey
     public String exerciseName;
 
-    @ColumnInfo(name = "exerciseDescription")
-    public String exerciseDescription;
-
     @ColumnInfo(name = "exerciseMuscleGroup")
     public String exerciseMuscleGroup;
 
-    @ColumnInfo(name = "exerciseYoutubeLink")
-    public String exerciseYoutubeLink;
+    public Exercises(String exerciseName, String exerciseMuscleGroup){
+        this.exerciseName = exerciseName;
+        this.exerciseMuscleGroup = exerciseMuscleGroup;
+    }
 }
 
