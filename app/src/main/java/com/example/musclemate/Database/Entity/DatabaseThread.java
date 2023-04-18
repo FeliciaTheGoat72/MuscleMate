@@ -11,13 +11,19 @@ import java.util.*;
 public class DatabaseThread implements Runnable {
 
     private Context context;
+
+    private ExerciseDatabase db;
     public DatabaseThread(Context context) {
         this.context = context;
     }
 
     public void run()
     {
-        ExerciseDatabase db = ExerciseDatabase.getInstance(context);
+        db = ExerciseDatabase.getInstance(context);
         System.out.println("Database created");
+    }
+
+    public ExerciseDatabase getDb(){
+        return db;
     }
 }
