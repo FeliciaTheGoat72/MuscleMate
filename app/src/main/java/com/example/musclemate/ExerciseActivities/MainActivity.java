@@ -45,9 +45,9 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        //DatabaseThread d = new DatabaseThread(getApplicationContext());
-        //Thread dbThread = new Thread(d);
-        //dbThread.start();
+        DatabaseThread d = new DatabaseThread(getApplicationContext());
+        Thread dbThread = new Thread(d);
+        dbThread.start();
 
 
 
