@@ -10,6 +10,9 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
+import com.example.musclemate.Database.Entity.ExerciseDao;
+import com.example.musclemate.Database.Entity.ExerciseDatabase;
+import com.example.musclemate.Database.Entity.Exercises;
 import com.example.musclemate.R;
 import com.example.musclemate.databinding.ChestFragmentBinding;
 
@@ -17,26 +20,51 @@ public class ChestFragment extends Fragment implements View.OnClickListener {
 
     private ChestFragmentBinding binding;
 
+    private ExerciseDatabase db;
+
+    private Exercises bPress;
+
+    private Exercises iPress;
+
+    private Exercises flies;
+
+    private Exercises dips;
+
+    private Exercises pushUps;
+
+    private ExerciseDao dao;
+
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.button_bench) {
             NavHostFragment.findNavController(ChestFragment.this)
                     .navigate(R.id.action_ChestFragment_to_benchFragment);
+            dao.insert(bPress);
+
         } else if (v.getId() == R.id.button_incline) {
             NavHostFragment.findNavController(ChestFragment.this)
                     .navigate(R.id.action_ChestFragment_to_inclineFragment);
+            dao.insert(iPress);
+
         } else if (v.getId() == R.id.button_dbFly) {
             NavHostFragment.findNavController(ChestFragment.this)
                     .navigate(R.id.action_ChestFragment_to_fliesFragment);
+            dao.insert(flies);
+
         } else if (v.getId() == R.id.button_dips) {
             NavHostFragment.findNavController(ChestFragment.this)
                     .navigate(R.id.action_ChestFragment_to_dipsFragment);
+            dao.insert(dips);
+
         } else if (v.getId() == R.id.button_pushups) {
             NavHostFragment.findNavController(ChestFragment.this)
                     .navigate(R.id.action_ChestFragment_to_pushUpsFragment);
+            dao.insert(pushUps);
+
         } else if (v.getId() == R.id.button_previous) {
             NavHostFragment.findNavController(ChestFragment.this)
                     .navigate(R.id.action_ChestFragment_to_MainMenuFragment);
+
         }
 
     }
@@ -53,6 +81,13 @@ public class ChestFragment extends Fragment implements View.OnClickListener {
         binding.buttonDips.setOnClickListener(this);
         binding.buttonPushups.setOnClickListener(this);
         binding.buttonPrevious.setOnClickListener(this);
+        bPress = new Exercises("bench press", "chest");
+        iPress = new Exercises("incline press", "chest");
+        flies = new Exercises("flies", "chest");
+        dips = new Exercises( "dips", "chest");
+        pushUps = new Exercises("push-ups", "chest");
+        db = ExerciseDatabase.getInstance(getContext());
+        dao = db.exerciseDao();
         return binding.getRoot();
 
     }

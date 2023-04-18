@@ -9,12 +9,31 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
+import com.example.musclemate.Database.Entity.ExerciseDao;
+import com.example.musclemate.Database.Entity.ExerciseDatabase;
+import com.example.musclemate.Database.Entity.Exercises;
 import com.example.musclemate.R;
 import com.example.musclemate.databinding.ArmFragmentBinding;
 
 public class ArmFragment extends Fragment implements View.OnClickListener {
 
     private ArmFragmentBinding binding;
+
+    private ExerciseDatabase db;
+
+    private Exercises curls;
+
+    private Exercises overhead;
+
+    private Exercises chinUps;
+
+    private Exercises closeGrip;
+
+    private Exercises latRaises;
+
+    private Exercises military;
+
+    private ExerciseDao dao;
 
     @Override
     public View onCreateView(
@@ -29,6 +48,14 @@ public class ArmFragment extends Fragment implements View.OnClickListener {
         binding.buttonClosegrip.setOnClickListener(this);
         binding.buttonLatRaise.setOnClickListener(this);
         binding.buttonMilitary.setOnClickListener(this);
+        curls = new Exercises("curls", "arm");
+        overhead = new Exercises("overhead press", "arm");
+        chinUps = new Exercises("chin-ups", "arm");
+        closeGrip = new Exercises( "close-grip press", "arm");
+        latRaises = new Exercises("lateral raises", "arm");
+        military = new Exercises("shoulder press", "arm");
+        db = ExerciseDatabase.getInstance(getContext());
+        dao = db.exerciseDao();
         return binding.getRoot();
     }
 
@@ -40,30 +67,38 @@ public class ArmFragment extends Fragment implements View.OnClickListener {
         } else if (view.getId() == R.id.button_curls) {
             NavHostFragment.findNavController(this)
                     .navigate(R.id.action_ArmFragment_to_CurlFragment);
+            dao.insert(curls);
+
         } else if (view.getId() == R.id.button_overhead) {
             NavHostFragment.findNavController(this)
                     .navigate(R.id.action_ArmFragment_to_OverheadFragment);
+            dao.insert(overhead);
+
         } else if (view.getId() == R.id.button_chinups) {
             NavHostFragment.findNavController(this)
                     .navigate(R.id.action_ArmFragment_to_ChinUpsFragment);
+            dao.insert(chinUps);
+
         } else if (view.getId() == R.id.button_closegrip) {
             NavHostFragment.findNavController(this)
                     .navigate(R.id.action_ArmFragment_to_CloseGripFragment);
+            dao.insert(closeGrip);
+
         } else if (view.getId() == R.id.button_military) {
             NavHostFragment.findNavController(this)
                     .navigate(R.id.action_ArmFragment_to_ShoulderPressFragment);
+            dao.insert(military);
+
         } else if (view.getId() == R.id.button_latRaise) {
         NavHostFragment.findNavController(this)
                 .navigate(R.id.action_ArmFragment_to_LateralRaiseFragment);
+            dao.insert(latRaises);
+
         }
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
-//        binding.buttonPrevious.setOnClickListener(new View.OnClickListener() {
-//
-//        });
     }
 
     @Override
