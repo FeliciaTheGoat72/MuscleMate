@@ -49,9 +49,6 @@ public class MainActivity extends AppCompatActivity {
         Thread dbThread = new Thread(d);
         dbThread.start();
 
-
-
-
     }
 
 
