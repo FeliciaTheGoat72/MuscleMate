@@ -65,27 +65,52 @@ public class AbFragment extends Fragment implements View.OnClickListener {
         } else if (view.getId() == R.id.button_crunch) {
             NavHostFragment.findNavController(AbFragment.this)
                     .navigate(R.id.action_AbFragment_to_crunchFragment);
-            dao.insert(crunch);
+            if(dao.getRowCount() >= 5){
+                dao.delete(dao.getTopExercise());
+                dao.insert(crunch);
+            }else{
+                dao.insert(crunch);
+            }
 
         } else if (view.getId() == R.id.button_situp) {
             NavHostFragment.findNavController(AbFragment.this)
                     .navigate(R.id.action_AbFragment_to_situpFragment);
-            dao.insert(situp);
+            if(dao.getRowCount() >= 5){
+                dao.delete(dao.getTopExercise());
+                dao.insert(situp);
+            }else{
+                dao.insert(situp);
+            }
 
         } else if (view.getId() == R.id.button_plank) {
             NavHostFragment.findNavController(AbFragment.this)
                     .navigate(R.id.action_AbFragment_to_plankFragment);
-            dao.insert(plank);
+            if(dao.getRowCount() >= 5){
+                dao.delete(dao.getTopExercise());
+                dao.insert(plank);
+            }else{
+                dao.insert(plank);
+            }
 
         } else if (view.getId() == R.id.button_rTwist) {
             NavHostFragment.findNavController(AbFragment.this)
                     .navigate(R.id.action_AbFragment_to_rTwistFragment);
-            dao.insert(rtwist);
+            if(dao.getRowCount() >= 5){
+                dao.delete(dao.getTopExercise());
+                dao.insert(rtwist);
+            }else{
+                dao.insert(rtwist);
+            }
 
         } else if (view.getId() == R.id.button_legRaises) {
             NavHostFragment.findNavController(AbFragment.this)
                     .navigate(R.id.action_AbFragment_to_legRaiseFragment);
-            dao.insert(legRaises);
+            if(dao.getRowCount() >= 5){
+                dao.delete(dao.getTopExercise());
+                dao.insert(legRaises);
+            }else{
+                dao.insert(legRaises);
+            }
 
         }
     }

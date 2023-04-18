@@ -39,27 +39,52 @@ public class ChestFragment extends Fragment implements View.OnClickListener {
         if (v.getId() == R.id.button_bench) {
             NavHostFragment.findNavController(ChestFragment.this)
                     .navigate(R.id.action_ChestFragment_to_benchFragment);
-            dao.insert(bPress);
+            if(dao.getRowCount() >= 5){
+                dao.delete(dao.getTopExercise());
+                dao.insert(bPress);
+            }else{
+                dao.insert(bPress);
+            }
 
         } else if (v.getId() == R.id.button_incline) {
             NavHostFragment.findNavController(ChestFragment.this)
                     .navigate(R.id.action_ChestFragment_to_inclineFragment);
-            dao.insert(iPress);
+            if(dao.getRowCount() >= 5){
+                dao.delete(dao.getTopExercise());
+                dao.insert(iPress);
+            }else{
+                dao.insert(iPress);
+            }
 
         } else if (v.getId() == R.id.button_dbFly) {
             NavHostFragment.findNavController(ChestFragment.this)
                     .navigate(R.id.action_ChestFragment_to_fliesFragment);
-            dao.insert(flies);
+            if(dao.getRowCount() >= 5){
+                dao.delete(dao.getTopExercise());
+                dao.insert(flies);
+            }else{
+                dao.insert(flies);
+            }
 
         } else if (v.getId() == R.id.button_dips) {
             NavHostFragment.findNavController(ChestFragment.this)
                     .navigate(R.id.action_ChestFragment_to_dipsFragment);
-            dao.insert(dips);
+            if(dao.getRowCount() >= 5){
+                dao.delete(dao.getTopExercise());
+                dao.insert(dips);
+            }else{
+                dao.insert(dips);
+            }
 
         } else if (v.getId() == R.id.button_pushups) {
             NavHostFragment.findNavController(ChestFragment.this)
                     .navigate(R.id.action_ChestFragment_to_pushUpsFragment);
-            dao.insert(pushUps);
+            if(dao.getRowCount() >= 5){
+                dao.delete(dao.getTopExercise());
+                dao.insert(pushUps);
+            }else{
+                dao.insert(pushUps);
+            }
 
         } else if (v.getId() == R.id.button_previous) {
             NavHostFragment.findNavController(ChestFragment.this)

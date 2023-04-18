@@ -67,32 +67,62 @@ public class ArmFragment extends Fragment implements View.OnClickListener {
         } else if (view.getId() == R.id.button_curls) {
             NavHostFragment.findNavController(this)
                     .navigate(R.id.action_ArmFragment_to_CurlFragment);
-            dao.insert(curls);
+            if(dao.getRowCount() >= 5){
+                dao.delete(dao.getTopExercise());
+                dao.insert(curls);
+            }else{
+                dao.insert(curls);
+            }
 
         } else if (view.getId() == R.id.button_overhead) {
             NavHostFragment.findNavController(this)
                     .navigate(R.id.action_ArmFragment_to_OverheadFragment);
-            dao.insert(overhead);
+            if(dao.getRowCount() >= 5){
+                dao.delete(dao.getTopExercise());
+                dao.insert(overhead);
+            }else{
+                dao.insert(overhead);
+            }
 
         } else if (view.getId() == R.id.button_chinups) {
             NavHostFragment.findNavController(this)
                     .navigate(R.id.action_ArmFragment_to_ChinUpsFragment);
-            dao.insert(chinUps);
+            if(dao.getRowCount() >= 5){
+                dao.delete(dao.getTopExercise());
+                dao.insert(chinUps);
+            }else{
+                dao.insert(chinUps);
+            }
 
         } else if (view.getId() == R.id.button_closegrip) {
             NavHostFragment.findNavController(this)
                     .navigate(R.id.action_ArmFragment_to_CloseGripFragment);
-            dao.insert(closeGrip);
+            if(dao.getRowCount() >= 5){
+                dao.delete(dao.getTopExercise());
+                dao.insert(closeGrip);
+            }else{
+                dao.insert(closeGrip);
+            }
 
         } else if (view.getId() == R.id.button_military) {
             NavHostFragment.findNavController(this)
                     .navigate(R.id.action_ArmFragment_to_ShoulderPressFragment);
-            dao.insert(military);
+            if(dao.getRowCount() >= 5){
+                dao.delete(dao.getTopExercise());
+                dao.insert(military);
+            }else{
+                dao.insert(military);
+            }
 
         } else if (view.getId() == R.id.button_latRaise) {
         NavHostFragment.findNavController(this)
                 .navigate(R.id.action_ArmFragment_to_LateralRaiseFragment);
-            dao.insert(latRaises);
+            if(dao.getRowCount() >= 5){
+                dao.delete(dao.getTopExercise());
+                dao.insert(latRaises);
+            }else{
+                dao.insert(latRaises);
+            }
 
         }
     }

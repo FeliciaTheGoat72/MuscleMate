@@ -39,27 +39,52 @@ public class LegFragment extends Fragment implements View.OnClickListener {
         if (v.getId() == R.id.button_bridge) {
             NavHostFragment.findNavController(LegFragment.this)
                     .navigate(R.id.action_LegFragment_to_bridgeFragment);
-            dao.insert(gBridges);
+            if(dao.getRowCount() >= 5){
+                dao.delete(dao.getTopExercise());
+                dao.insert(gBridges);
+            }else{
+                dao.insert(gBridges);
+            }
 
         } else if (v.getId() == R.id.button_rdl) {
             NavHostFragment.findNavController(LegFragment.this)
                     .navigate(R.id.action_LegFragment_to_RDLFragment);
-            dao.insert(rDeadlift);
+            if(dao.getRowCount() >= 5){
+                dao.delete(dao.getTopExercise());
+                dao.insert(rDeadlift);
+            }else{
+                dao.insert(rDeadlift);
+            }
 
         } else if (v.getId() == R.id.button_split) {
             NavHostFragment.findNavController(LegFragment.this)
                     .navigate(R.id.action_LegFragment_to_splitSquatFragment);
-            dao.insert(sSquat);
+            if(dao.getRowCount() >= 5){
+                dao.delete(dao.getTopExercise());
+                dao.insert(sSquat);
+            }else{
+                dao.insert(sSquat);
+            }
 
         } else if (v.getId() == R.id.button_squat) {
             NavHostFragment.findNavController(LegFragment.this)
                     .navigate(R.id.action_LegFragment_to_squatFragment);
-            dao.insert(squat);
+            if(dao.getRowCount() >= 5){
+                dao.delete(dao.getTopExercise());
+                dao.insert(squat);
+            }else{
+                dao.insert(squat);
+            }
 
         } else if (v.getId() == R.id.button_lunge) {
             NavHostFragment.findNavController(LegFragment.this)
                     .navigate(R.id.action_LegFragment_to_lungeFragment);
-            dao.insert(lunges);
+            if(dao.getRowCount() >= 5){
+                dao.delete(dao.getTopExercise());
+                dao.insert(lunges);
+            }else{
+                dao.insert(lunges);
+            }
 
         } else if (v.getId() == R.id.button_previous) {
             NavHostFragment.findNavController(LegFragment.this)

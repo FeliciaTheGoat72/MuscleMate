@@ -63,27 +63,52 @@ public class BackFragment extends Fragment implements View.OnClickListener {
         } else if (view.getId() == R.id.button_boRow) {
             NavHostFragment.findNavController(BackFragment.this)
                     .navigate(R.id.action_BackFragment_to_bendOverRowFragment);
-            dao.insert(bRow);
+            if(dao.getRowCount() >= 5){
+                dao.delete(dao.getTopExercise());
+                dao.insert(bRow);
+            }else{
+                dao.insert(bRow);
+            }
 
         } else if (view.getId() == R.id.button_pullup) {
             NavHostFragment.findNavController(BackFragment.this)
                     .navigate(R.id.action_BackFragment_to_pullupFragment);
-            dao.insert(pullUps);
+            if(dao.getRowCount() >= 5){
+                dao.delete(dao.getTopExercise());
+                dao.insert(pullUps);
+            }else{
+                dao.insert(pullUps);
+            }
 
         } else if (view.getId() == R.id.button_deadlift) {
             NavHostFragment.findNavController(BackFragment.this)
                     .navigate(R.id.action_BackFragment_to_deadliftFragment);
-            dao.insert(deadLift);
+            if(dao.getRowCount() >= 5){
+                dao.delete(dao.getTopExercise());
+                dao.insert(deadLift);
+            }else{
+                dao.insert(deadLift);
+            }
 
         } else if (view.getId() == R.id.button_upright) {
             NavHostFragment.findNavController(BackFragment.this)
                     .navigate(R.id.action_BackFragment_to_uprightRowFragment);
-            dao.insert(uRow);
+            if(dao.getRowCount() >= 5){
+                dao.delete(dao.getTopExercise());
+                dao.insert(uRow);
+            }else{
+                dao.insert(uRow);
+            }
 
         } else if (view.getId() == R.id.button_dbRow) {
             NavHostFragment.findNavController(BackFragment.this)
                     .navigate(R.id.action_BackFragment_to_dbRowFragment);
-            dao.insert(dRow);
+            if(dao.getRowCount() >= 5){
+                dao.delete(dao.getTopExercise());
+                dao.insert(dRow);
+            }else{
+                dao.insert(dRow);
+            }
 
         }
     }

@@ -15,11 +15,17 @@ public interface ExerciseDao {
     @Query("SELECT * FROM exercises")
     List<Exercises> getAll();
 
+    @Query("SELECT * FROM exercises LIMIT 1")
+    Exercises getTopExercise();
+
     @Query("SELECT * FROM exercises WHERE exerciseName = (:exerciseName)")
     List<Exercises> loadAllByName(String exerciseName);
 
     @Query("SELECT * FROM exercises WHERE exerciseMuscleGroup = (:exerciseMuscleGroup)")
     List<Exercises> findByMuscleGroup(String exerciseMuscleGroup);
+
+    @Query("SELECT COUNT(exerciseName) FROM exercises")
+    int getRowCount();
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insert(Exercises exercise);
