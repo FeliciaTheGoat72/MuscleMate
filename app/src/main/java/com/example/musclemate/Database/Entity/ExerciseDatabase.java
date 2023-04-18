@@ -14,7 +14,7 @@ public abstract class ExerciseDatabase extends RoomDatabase {
     public static synchronized ExerciseDatabase getInstance(Context context) {
         if (instance == null) {
             instance = Room.databaseBuilder(context.getApplicationContext(),
-                    ExerciseDatabase.class, DB_NAME).build();
+                    ExerciseDatabase.class, DB_NAME).allowMainThreadQueries().build();
         }
         return instance;
     }
