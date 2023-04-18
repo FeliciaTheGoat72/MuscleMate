@@ -4,6 +4,7 @@ package com.example.musclemate.Database.Entity;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
+import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 import androidx.room.Update;
 
@@ -20,7 +21,7 @@ public interface ExerciseDao {
     @Query("SELECT * FROM exercises WHERE exerciseMuscleGroup = (:exerciseMuscleGroup)")
     List<Exercises> findByMuscleGroup(String exerciseMuscleGroup);
 
-    @Insert
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insert(Exercises exercise);
 
     @Update

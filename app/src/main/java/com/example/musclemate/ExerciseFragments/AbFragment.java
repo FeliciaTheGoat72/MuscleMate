@@ -20,7 +20,7 @@ public class AbFragment extends Fragment implements View.OnClickListener {
 
     private AbFragmentBinding binding;
 
-    private ExerciseDao db;
+    private ExerciseDatabase db;
 
     private Exercises crunch;
 
@@ -31,6 +31,8 @@ public class AbFragment extends Fragment implements View.OnClickListener {
     private Exercises rtwist;
 
     private Exercises legRaises;
+
+    private ExerciseDao dao;
 
     @Override
     public View onCreateView(
@@ -49,7 +51,8 @@ public class AbFragment extends Fragment implements View.OnClickListener {
         plank = new Exercises("plank", "ab");
         rtwist = new Exercises( "russian twist", "ab");
         legRaises = new Exercises("leg raises", "ab");
-
+        db = ExerciseDatabase.getInstance(getContext());
+        dao = db.exerciseDao();
         return binding.getRoot();
     }
 
@@ -62,27 +65,27 @@ public class AbFragment extends Fragment implements View.OnClickListener {
         } else if (view.getId() == R.id.button_crunch) {
             NavHostFragment.findNavController(AbFragment.this)
                     .navigate(R.id.action_AbFragment_to_crunchFragment);
-            //db.insert(crunch);
+            dao.insert(crunch);
 
         } else if (view.getId() == R.id.button_situp) {
             NavHostFragment.findNavController(AbFragment.this)
                     .navigate(R.id.action_AbFragment_to_situpFragment);
-            //db.insert(situp);
+            dao.insert(situp);
 
         } else if (view.getId() == R.id.button_plank) {
             NavHostFragment.findNavController(AbFragment.this)
                     .navigate(R.id.action_AbFragment_to_plankFragment);
-            //db.insert(plank);
+            dao.insert(plank);
 
         } else if (view.getId() == R.id.button_rTwist) {
             NavHostFragment.findNavController(AbFragment.this)
                     .navigate(R.id.action_AbFragment_to_rTwistFragment);
-            //db.insert(rtwist);
+            dao.insert(rtwist);
 
         } else if (view.getId() == R.id.button_legRaises) {
             NavHostFragment.findNavController(AbFragment.this)
                     .navigate(R.id.action_AbFragment_to_legRaiseFragment);
-            //db.insert(legRaises);
+            dao.insert(legRaises);
 
         }
     }
